@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Protocolo 21 Dias + Detetive da Calma | Clínica AcalmaMente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-1: #f6f8ff;
+      --bg-2: #ffffff;
+      --accent: #6C63FF;
+      --gold: #c8a75c;
+      --muted: #6f758a;
+      --card: #ffffff;
+      --maxw: 1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      line-height:1.45;
+      color:#1b2430;
+      background:linear-gradient(180deg,var(--bg-1),var(--bg-2));
+    }
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:16px}
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .video-col{order:-1}
+    }
+    .eyebrow{color:var(--accent);font-weight:700;border-radius:999px;padding:6px 12px;background:rgba(108,99,255,0.08);font-size:13px;display:inline-block}
+    h1{font-size:34px;margin:6px 0 10px;line-height:1.02}
+    h1 .muted{color:var(--muted);font-weight:600;font-size:18px;display:block;margin-top:6px}
+    .lead{color:var(--muted);font-size:16px;margin:12px 0 18px}
+    .cta-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .btn{border:0;cursor:pointer;border-radius:14px;padding:12px 18px;font-weight:700}
+    .btn-primary{
+      background:linear-gradient(90deg,var(--gold),#b99348);
+      color:white;
+      box-shadow:0 12px 30px rgba(200,167,92,0.18);
+      transition:transform .18s ease, box-shadow .18s ease;
+      animation:pulse 3s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% {transform:scale(1);}
+      50% {transform:scale(1.05);}
+    }
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(200,167,92,0.22)}
+    .micro{font-size:13px;color:#78809b}
+    .video-card{background:var(--card);padding:14px;border-radius:16px;box-shadow:0 18px 40px rgba(20,30,80,0.06)}
+    
+    /* Vídeo totalmente responsivo */
+    .video-wrap{
+  position: relative;
+  width: 100%;
+  padding-top: 177.77%; /* 16:9 invertido = 9:16 */
+  border-radius:12px;
+  overflow: hidden;
+  background: linear-gradient(180deg,#f7f9ff,#ffffff);
+}
+.video-wrap video{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:contain; /* Mantém todo o vídeo visível */
+  border-radius:12px;
+}
+
+
+    .benefits{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .benefit{flex:1 1 150px;background:linear-gradient(180deg,#fff,#fbfdff);padding:10px;border-radius:10px;border:1px solid rgba(15,20,40,0.03);font-size:14px;color:#2b3150}
+    .testimonial{flex:1 1 240px;background:linear-gradient(180deg,#fff,#f9fbff);padding:12px;border-radius:12px;border-left:4px solid var(--accent);box-shadow:0 8px 20px rgba(20,30,80,0.04)}
+    .testimonial small{display:block;color:var(--muted);margin-top:8px}
+    .testimonials{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+    .cta-bar{margin-top:34px;background:linear-gradient(90deg,#f8fbff,#ffffff);padding:20px;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid rgba(12,20,60,0.03)}
+    .cta-bar h2{margin:0;font-size:18px}
+    .cta-bar p{margin:6px 0 0 0;color:var(--muted)}
+    footer{margin-top:38px;text-align:center;color:#7b8193;font-size:13px}
+    footer img{max-width:160px;margin-bottom:10px}
+    .decor-top{position:absolute;left:-60px;top:-60px;width:240px;height:240px;background:radial-gradient(circle at 30% 30%, rgba(108,99,255,0.14), transparent 40%);border-radius:50%;filter:blur(10px);z-index:-1}
+    .decor-bottom{position:absolute;right:-70px;bottom:-90px;width:260px;height:260px;background:radial-gradient(circle at 70% 70%, rgba(108,99,255,0.08), transparent 40%);border-radius:50%;filter:blur(12px);z-index:-1}
+    .section-explicacao{margin-top:60px;background:#fff;border-radius:16px;padding:32px;box-shadow:0 10px 40px rgba(20,30,80,0.06)}
+    .section-explicacao h2{color:var(--accent);font-size:26px;margin-bottom:12px;text-align:center}
+    .section-explicacao p{font-size:16px;color:#2b3150;line-height:1.7;margin-bottom:12px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="decor-top"></div>
+  <div class="decor-bottom"></div>
+
+  <div class="container">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Protocolo 21 Dias</div>
+        <h1>Protocolo 21 Dias + Detetive da Calma 
+          <span class="muted">Transforme sua mente. Cure a ansiedade. Durma melhor.</span>
+        </h1>
+        <p class="lead">
+          Você sente sua mente acelerada, noites sem sono e a sensação de que a calma não volta?  
+          O <strong>Protocolo 21 Dias</strong> é uma jornada guiada com áudios de hipnose, exercícios práticos e o jogo terapêutico <strong>Detetive da Calma</strong> — criada para ajudar você a reencontrar equilíbrio emocional.  
+          Fale direto no WhatsApp e receba seu <strong>teste gratuito</strong> agora mesmo.
+        </p>
+
+        <div class="cta-row">
+          <button class="btn btn-primary" id="ctaMain">💬 Falar agora e ganhar meu teste gratuito</button>
+        </div>
+        <div class="micro">Sem spam — somente o convite e o teste gratuito.</div>
+
+        <div class="benefits">
+          <div class="benefit">Reduza a ansiedade sem remédios</div>
+          <div class="benefit">Volte a dormir profundamente</div>
+          <div class="benefit">Recupere sua autoestima passo a passo</div>
+        </div>
+
+        <div class="testimonials">
+          <div class="testimonial">"Em menos de uma semana já senti diferença no sono e na calma."<br><small>— Patrícia, 34</small></div>
+          <div class="testimonial">"O Detetive da Calma me ajudou a entender meus gatilhos e respirar melhor."<br><small>— Carlos, 42</small></div>
+          <div class="testimonial">"Simples, leve e realmente funciona."<br><small>— Juliana, 28</small></div>
+        </div>
+      </div>
+
+      <div class="video-card video-col">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div style="font-weight:700">Assista</div>
+          <div style="font-size:13px;color:var(--muted)"></div>
+        </div>
+        <div class="video-wrap">
+          <video controls autoplay muted loop>
+            <source src="acalmamente.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-explicacao">
+      <h2>✨ Como o Protocolo 21 Dias + Detetive da Calma muda sua vida</h2>
+      <p>Imagine acordar com a mente leve, dormindo bem e sentindo que, finalmente, você voltou a ter o controle das suas emoções.</p>
+      <p>O <strong>Protocolo 21 Dias</strong> une a <strong>Hipnose Clínica</strong>, que reprograma padrões mentais e reduz a ansiedade na origem, com o <strong>Jogo Terapêutico Detetive da Calma</strong>, que transforma o autoconhecimento em algo leve e envolvente.</p>
+      <p>Essa combinação <strong>ativa o poder natural de cura da sua mente</strong>, permitindo que você libere o peso emocional acumulado e recupere a tranquilidade em apenas alguns minutos por dia.</p>
+      <p>💫 Milhares de pessoas já sentiram a diferença logo na primeira semana.  
+      Agora é a sua vez de experimentar — <strong>comece hoje o seu teste gratuito</strong> e veja com seus próprios olhos o que acontece quando a calma volta.</p>
+    </div>
+
+    <div class="cta-bar">
+      <div>
+        <h2>🎁 Ganhe seu teste gratuito</h2>
+        <p>Fale direto no WhatsApp e receba agora seu acesso gratuito ao Protocolo 21 Dias.</p>
+      </div>
+      <div>
+        <button class="btn btn-primary" id="ctaBottom">💬 Falar agora e ganhar meu teste gratuito</button>
+      </div>
+    </div>
+
+    <footer>
+      <img src="c7dfd6c1-0c41-43f3-b01b-0f3236c8d936.jpg" alt="Logo Clínica AcalmaMente">
+      <div>© Clínica AcalmaMente • Protocolo 21 Dias</div>
+    </footer>
+  </div>
+
+  <script>
+    const WHATSAPP_LINK = 'https://wa.me/555391270985?text=Olá👋,+quero+receber+meu+teste+gratuito+do+Protocolo+21+Dias+%2B+Detetive+da+Calma.';
+    function openWhatsApp(){ window.open(WHATSAPP_LINK, '_blank'); }
+    document.getElementById('ctaMain').addEventListener('click', openWhatsApp);
+    document.getElementById('ctaBottom').addEventListener('click', openWhatsApp);
+  </script>
+</body>
+</html>
